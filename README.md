@@ -9,6 +9,7 @@ The terminal has several functions to it like getting a random number function, 
 # Development Environment
 
 Go 1.16
+ 
 VScode
 
 Library's and packages used
@@ -20,8 +21,6 @@ Library's and packages used
 
 
 # Useful Websites
-
-{Make a list of websites that you found helpful in this project}
 * [gobyexample](https://gobyexample.com/)
 * [golang docs](https://golang.org/doc/)
 

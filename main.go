@@ -4,6 +4,8 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"net"
+	"os"
 	"os/user"
 	"time"
 )
@@ -21,14 +23,23 @@ func main() {
 	for {
 		fmt.Print("<< ")
 		var input string
-		fmt.Scanln(&input)
+		fmt.Scan(&input)
 		switch input {
 		case "--options":
-			fmt.Print("Here are the options")
+			fmt.Println("Here are the options: ")
+			fmt.Println("rand: get a random number")
+			fmt.Println("Ping: ping a website to see if you get a request back")
+			fmt.Println("Math: do some math")
+			fmt.Println("Database: add remove and edit items in your database")
+			fmt.Println("quit: end the terminal")
 		case "rand":
 			var x = (rand.Intn(77))          //1 way to declare a var
 			rand.Seed(time.Now().UnixNano()) //to make a new rand num every time. Default seed is 1
 			fmt.Println("This is a random number:", x)
+		case "math":
+
+		case "database":
+
 		case "quit":
 			fmt.Print("Bye")
 			break
